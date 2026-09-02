@@ -302,10 +302,7 @@ function mostrarProdutos(lista) {
 
 }
 
-
-// ==========================================
 // FILTRAR CATEGORIAS
-// ==========================================
 
 function filtrarProdutos(categoria) {
 
@@ -326,10 +323,7 @@ function filtrarProdutos(categoria) {
     mostrarProdutos(filtrados);
 }
 
-
-// ==========================================
 // BUSCAR PRODUTO
-// ==========================================
 
 function buscarProduto() {
 
@@ -351,10 +345,7 @@ function buscarProduto() {
     mostrarProdutos(resultado);
 }
 
-
-// ==========================================
 // ADICIONAR À CESTA
-// ==========================================
 
 function adicionarCarrinho(id) {
 
@@ -384,9 +375,6 @@ function adicionarCarrinho(id) {
 
 }
 
-
-// ==========================================
 // INICIALIZAÇÃO
-// ==========================================
 
 mostrarProdutos(produtos);
