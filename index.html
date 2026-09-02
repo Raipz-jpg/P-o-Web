@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Pãos&Web - Padaria</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <div class="logo">
+            <span class="icone-logo">🥖</span>
+
+            <div>
+                <h1>Pãos<span>&</span>Web</h1>
+                <p>O sabor que conecta você</p>
+            </div>
+        </div>
+
+        <!-- CESTA NO CANTO SUPERIOR DIREITO -->
+        <div class="cesta">
+            🧺
+            <span id="quantidadeCarrinho">0</span>
+        </div>
+
+    </header>
+
+
+    <!-- MENU PRINCIPAL -->
+    <nav class="menu">
+
+        <button onclick="filtrarProdutos('todos')">
+            Todos
+        </button>
+
+        <button onclick="filtrarProdutos('pao')">
+            🥖 Pães
+        </button>
+
+        <button onclick="filtrarProdutos('bolo')">
+            🎂 Bolos
+        </button>
+
+        <button onclick="filtrarProdutos('salgado')">
+            🥟 Salgados
+        </button>
+
+        <button onclick="filtrarProdutos('doce')">
+            🍰 Doces
+        </button>
+
+    </nav>
+
+
+    <!-- APRESENTAÇÃO -->
+    <section class="apresentacao">
+
+        <h2>Bem-vindo à Pãos&Web!</h2>
+
+        <p>
+            Confira nossos produtos, ingredientes,
+            informações nutricionais, preços e estoque.
+        </p>
+
+        <input
+            type="text"
+            id="campoBusca"
+            placeholder="🔎 Procurar produto..."
+            onkeyup="buscarProduto()"
+        >
+
+    </section>
+
+
+    <!-- PRODUTOS -->
+    <main>
+
+        <h2 class="titulo-produtos">
+            Nossos produtos
+        </h2>
+
+        <section id="listaProdutos" class="produtos">
+
+            <!-- PRODUTOS SERÃO INSERIDOS PELO JAVASCRIPT -->
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h3>Pãos&Web 🥖</h3>
+
+        <p>
+            Padaria, sabor e tecnologia em um só lugar.
+        </p>
+
+        <p>
+            © 2026 Pãos&Web - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
